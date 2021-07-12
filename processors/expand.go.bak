@@ -1,0 +1,168 @@
+package processors
+
+import (
+	"context"
+	"errors"
+	"fmt"
+	"github.com/jhonynet/hlpr/hlpr/executor"
+	"github.com/jhonynet/hlpr/hlpr/processor"
+	"github.com/jhonynet/hlpr/hlpr/stages"
+	"sync"
+)
+
+const (
+	ExpandStageIdentifier = "expand"
+
+	ExpandMergeStrategy    ExpandStrategy = "merge"
+	ExpandOverrideStrategy ExpandStrategy = "override"
+)
+
+var _ processor.StageProcessor = (*ExpandProcessor)(nil)
+
+type ExpandStrategy string
+
+type ExpandStage struct {
+	Field    string
+	Dst      string
+	Strategy ExpandStrategy
+	With     stages.Stage
+}
+
+type ExpandProcessor struct{}
+
+func (e ExpandProcessor) Accept(s stages.Stage) bool {
+	return s.Type() == ExpandStageIdentifier
+}
+
+func (e ExpandProcessor) Setup(ctx context.Context, input chan unit.Data) (output chan unit.Data, err error) {
+	var stage ExpandStage
+	if err := stages.StageFromContext(ctx).Bind(&stage); err != nil {
+		return nil, fmt.Errorf("cannot bind ExpandStage %w", err)
+	}
+
+	processor, err := e.getProcessor(ctx, stage)
+	if err != nil {
+		return nil, err
+	}
+
+	output = make(chan unit.Data)
+	go e.run(ctx, stage, processor, input, output)
+
+	return output, nil
+}
+
+func (e *ExpandProcessor) run(ctx context.Context, stage ExpandStage, processor processor.StageProcessor, input, output chan unit.Data) {
+	for entry := range input {
+		// setup the processor
+		pInput, pOutput, err := e.setupProcessor(ctx, stage, processor)
+		if err != nil {
+			output <- entry.WithError(fmt.Errorf("cannot setup processor: %w", err))
+
+			continue
+		}
+
+		// get the desired field
+		field, err := entry.Get(stage.Field)
+		if err != nil {
+			output <- entry.WithError(fmt.Errorf("cannot access field: %w", err))
+
+			continue
+		}
+
+		var (
+			wg        sync.WaitGroup
+			isSlice   bool
+			fieldData = make([]interface{}, 1)
+		)
+
+		// setup the receiver
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for val := range pOutput {
+				if val.Error != nil {
+					fieldData[val.TrackingID] = val.Error
+
+					continue
+				}
+
+				// todo: handle merge
+				fieldData[val.TrackingID] = val.Data
+			}
+		}()
+
+		// send all the data
+		switch f := field.(type) {
+		case []interface{}:
+			isSlice = true
+			fieldData = f
+			for index, value := range f {
+				pInput <- unit.Data{Data: value, TrackingID: index}
+			}
+
+		case interface{}:
+			fieldData[0] = f
+			pInput <- unit.Data{Data: f, TrackingID: 0}
+		}
+
+		// close input after send the data.
+		close(pInput)
+
+		// wait for the processor to finish
+		wg.Wait()
+
+		// get destination field
+		destination := stage.Field
+		if stage.Dst != "" {
+			destination = stage.Dst
+		}
+
+		// set the processed data
+		var dataUnit unit.Data
+		if isSlice {
+			dataUnit, err = entry.Set(destination, fieldData)
+		} else {
+			dataUnit, err = entry.Set(destination, fieldData[0])
+		}
+
+		if err != nil {
+			output <- entry.WithError(fmt.Errorf("cannot set field: %w", err))
+
+			continue
+		}
+
+		output <- dataUnit
+	}
+
+	close(output)
+}
+
+func (e ExpandProcessor) getProcessor(ctx context.Context, stage ExpandStage) (processor.StageProcessor, error) {
+	wfx := executor.WorkflowExecutorFromContext(ctx)
+	if wfx == nil {
+		return nil, errors.New("cannot get workflow executor from context")
+	}
+
+	for _, processor := range wfx.GetProcessors() {
+		if processor.Accept(stage.With) {
+			return processor, nil
+		}
+	}
+
+	return nil, fmt.Errorf("there is no processor for '%s' stage", stage.With.Type())
+}
+
+func (e ExpandProcessor) setupProcessor(ctx context.Context, stage ExpandStage, processor processor.StageProcessor) (chan unit.Data, chan unit.Data, error) {
+	var (
+		processorInput  = make(chan unit.Data)
+		processorOutput = make(chan unit.Data)
+		err             error
+	)
+
+	ctx = stage.With.NewContext(ctx)
+	if processorOutput, err = processor.Setup(ctx, processorInput); err != nil {
+		return nil, nil, err
+	}
+
+	return processorInput, processorOutput, nil
+}

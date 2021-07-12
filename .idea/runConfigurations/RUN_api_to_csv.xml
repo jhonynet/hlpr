@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RUN api-to-csv" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="hlpr" />
+    <working_directory value="$PROJECT_DIR$/tasks/api-to-csv/" />
+    <parameters value="-v task.yaml" />
+    <kind value="PACKAGE" />
+    <filePath value="$PROJECT_DIR$/src/main.go" />
+    <package value="github.com/jhonynet/hlpr" />
+    <directory value="$PROJECT_DIR$/" />
+    <method v="2" />
+  </configuration>
+</component>
