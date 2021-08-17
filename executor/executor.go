@@ -9,6 +9,7 @@ import (
 	"github.com/jhonynet/hlpr/workload"
 	"go.uber.org/zap"
 	"sync"
+	"time"
 )
 
 type defaultExecutor struct {
@@ -22,7 +23,10 @@ func NewDefaultExecutor(registry processor.Registry) Executor {
 }
 
 func (d defaultExecutor) Execute(ctx context.Context, pipeline *pipeline.Pipeline) error {
-	processorProvider := new(processor.Provider)
+	var (
+		start             = time.Now()
+		processorProvider = new(processor.Provider)
+	)
 
 	// configure each processor
 	for idx, stage := range pipeline.Definition.Stages {
@@ -31,7 +35,7 @@ func (d defaultExecutor) Execute(ctx context.Context, pipeline *pipeline.Pipelin
 		case idx == 0: //first is source
 			proc := d.processorRegistry.Get(stage)
 			if proc == nil {
-				return fmt.Errorf("processor for stage %s not found", stage.Type())
+				return fmt.Errorf("processor for stage '%s' not found", stage.Type())
 			}
 
 			if sourceProc, ok := proc.(processor.Source); ok {
@@ -40,12 +44,12 @@ func (d defaultExecutor) Execute(ctx context.Context, pipeline *pipeline.Pipelin
 				continue
 			}
 
-			return fmt.Errorf("processor for stage %s cannot be used as source", stage.Type())
+			return fmt.Errorf("processor for stage '%s' cannot be used as source", stage.Type())
 
 		case len(pipeline.Definition.Stages) == idx+1: //last is sink
 			proc := d.processorRegistry.Get(stage)
 			if proc == nil {
-				return fmt.Errorf("processor for stage %s not found", stage.Type())
+				return fmt.Errorf("processor for stage '%s' not found", stage.Type())
 			}
 
 			if sinkProc, ok := proc.(processor.Sink); ok {
@@ -54,12 +58,12 @@ func (d defaultExecutor) Execute(ctx context.Context, pipeline *pipeline.Pipelin
 				continue
 			}
 
-			return fmt.Errorf("processor for stage %s cannot be used as source", stage.Type())
+			return fmt.Errorf("processor for stage '%s' cannot be used as source", stage.Type())
 
 		default: // others are mapper
 			proc := d.processorRegistry.Get(stage)
 			if proc == nil {
-				return fmt.Errorf("processor for stage %s not found", stage.Type())
+				return fmt.Errorf("processor for stage '%s' not found", stage.Type())
 			}
 
 			if mapProc, ok := proc.(processor.Map); ok {
@@ -68,7 +72,7 @@ func (d defaultExecutor) Execute(ctx context.Context, pipeline *pipeline.Pipelin
 				continue
 			}
 
-			return fmt.Errorf("processor for stage %s cannot be used as mapper", stage.Type())
+			return fmt.Errorf("processor for stage '%s' cannot be used as mapper", stage.Type())
 		}
 	}
 
@@ -90,7 +94,7 @@ func (d defaultExecutor) Execute(ctx context.Context, pipeline *pipeline.Pipelin
 
 	wl.Wait()
 	wg.Wait()
-	logger.Debug(ctx, "finished!!!")
+	logger.Debug(ctx, "finished in "+time.Since(start).String())
 
 	return nil
 }

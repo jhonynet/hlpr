@@ -3,6 +3,7 @@ package processors
 import (
 	"github.com/jhonynet/hlpr/processor"
 	"github.com/jhonynet/hlpr/processors/console"
+	"github.com/jhonynet/hlpr/processors/field"
 	"github.com/jhonynet/hlpr/processors/file"
 	"github.com/jhonynet/hlpr/processors/http"
 	"github.com/jhonynet/hlpr/processors/jq"
@@ -21,4 +22,5 @@ var DefaultRegistry = processor.Registry{
 	new(json.Processor),
 	new(unwrap.Processor),
 	new(console.Processor),
+	new(field.Processor),
 }
