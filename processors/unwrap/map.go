@@ -17,26 +17,19 @@ func (r *Processor) CreateMap(p *pipeline.Pipeline, s *stages.Stage) processor.M
 }
 
 // todo: propagate context cancellation.
-func (r *Processor) RunMap(_ context.Context, input <-chan *unit.Data, wg *sync.WaitGroup) (<-chan *unit.Data, <-chan unit.Error, error) {
-	errChan := make(chan unit.Error, 1)
-	output := make(chan *unit.Data)
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		defer close(output)
-		defer close(errChan)
+func (r *Processor) RunMap(ctx context.Context, input <-chan *unit.Data, wg *sync.WaitGroup) (<-chan *unit.Data, <-chan unit.Error, error) {
+	return processor.Mapper(ctx, input, r.mapFunc(), wg)
+}
 
-		for data := range input {
-			if val, ok := data.Value.([]interface{}); ok {
-				for _, v := range val {
-					output <- &unit.Data{Value: v}
-				}
-
-				return
+func (r *Processor) mapFunc() processor.MapFunc {
+	return func(_ context.Context, data *unit.Data, output chan *unit.Data, errChan chan unit.Error) {
+		if val, ok := data.Value.([]interface{}); ok {
+			for _, v := range val {
+				output <- &unit.Data{Value: v}
 			}
-			output <- data
-		}
-	}()
 
-	return output, errChan, nil
+			return
+		}
+		output <- data
+	}
 }

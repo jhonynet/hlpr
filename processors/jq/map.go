@@ -31,30 +31,23 @@ func (r *Processor) RunMap(ctx context.Context, input <-chan *unit.Data, wg *syn
 		return nil, nil, fmt.Errorf("cannot parse jq query: %w", err)
 	}
 
-	errChan := make(chan unit.Error, 1)
-	output := make(chan *unit.Data)
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		defer close(errChan)
-		defer close(output)
+	return processor.Mapper(ctx, input, r.mapFunc(query), wg)
+}
 
-		for data := range input {
-			iter := query.RunWithContext(ctx, data.Value)
-			for {
-				v, ok := iter.Next()
-				if !ok {
-					break
-				}
-				if err, ok := v.(error); ok {
-					errChan <- unit.ErrorFrom(fmt.Errorf("error happened during jq iteration %w", err))
-					continue
-				}
-
-				output <- &unit.Data{Value: v}
+func (r *Processor) mapFunc(query *gojq.Query) processor.MapFunc {
+	return func(ctx context.Context, data *unit.Data, output chan *unit.Data, errChan chan unit.Error) {
+		iter := query.RunWithContext(ctx, data.Value)
+		for {
+			v, ok := iter.Next()
+			if !ok {
+				break
 			}
-		}
-	}()
+			if err, ok := v.(error); ok {
+				errChan <- unit.ErrorFrom(fmt.Errorf("error happened during jq iteration %w", err))
+				continue
+			}
 
-	return output, errChan, nil
+			output <- &unit.Data{Value: v}
+		}
+	}
 }

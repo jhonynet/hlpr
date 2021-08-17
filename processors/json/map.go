@@ -2,7 +2,6 @@ package json
 
 import (
 	"context"
-	"fmt"
 	"github.com/jhonynet/hlpr/pipeline"
 	"github.com/jhonynet/hlpr/processor"
 	"github.com/jhonynet/hlpr/stages"
@@ -20,48 +19,29 @@ func (r *Processor) CreateMap(p *pipeline.Pipeline, s *stages.Stage) processor.M
 }
 
 // todo: propagate context cancellation.
-func (r *Processor) RunMap(_ context.Context, input <-chan *unit.Data, wg *sync.WaitGroup) (<-chan *unit.Data, <-chan unit.Error, error) {
+func (r *Processor) RunMap(ctx context.Context, input <-chan *unit.Data, wg *sync.WaitGroup) (<-chan *unit.Data, <-chan unit.Error, error) {
 	var stage Stage
 	if err := r.stage.Bind(&stage); err != nil {
 		return nil, nil, err
 	}
 
-	errChan := make(chan unit.Error, 1)
-	output := make(chan *unit.Data)
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		defer close(output)
-		defer close(errChan)
+	return processor.Mapper(ctx, input, r.mapFunc(stage), wg)
+}
 
-		switch stage.Mode {
-		case Decode:
-			for data := range input {
-				d, err := r.decode(data)
-				if err != nil {
-					errChan <- unit.Error{Err: err}
-					continue
-				}
+func (r *Processor) mapFunc(stage Stage) processor.MapFunc {
+	return func(_ context.Context, data *unit.Data, output chan *unit.Data, errChan chan unit.Error) {
+		fn := r.decode
+		if stage.Mode == Encode {
+			fn = r.encode
+		}
 
-				output <- d
-			}
-			return
+		d, err := fn(data)
 
-		case Encode:
-			for data := range input {
-				d, err := r.encode(data)
-				if err != nil {
-					errChan <- unit.Error{Err: err}
-					continue
-				}
-
-				output <- d
-			}
+		if err != nil {
+			errChan <- unit.Error{Err: err}
 			return
 		}
 
-		errChan <- unit.Error{Err: fmt.Errorf("%s is not a valid json mode", stage.Mode)}
-	}()
-
-	return output, errChan, nil
+		output <- d
+	}
 }
