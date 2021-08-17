@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff659bab-5164-480b-a0ad-4fcbf583ef44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/executor/executor.go" beforeDir="false" afterPath="$PROJECT_DIR$/executor/executor.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processors/defaults.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/defaults.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,10 +149,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.RUN file task" />
-      <item itemvalue="Go Build.RUN fury-apps" />
       <item itemvalue="Go Build.RUN api-to-csv" />
       <item itemvalue="Go Build.RUN simple-task" />
+      <item itemvalue="Go Build.RUN file task" />
+      <item itemvalue="Go Build.RUN fury-apps" />
       <item itemvalue="Go Build.RUN test" />
       <item itemvalue="Go Test.TestFromBytes in github.com/jhonynet/hlpr/pipeline" />
       <item itemvalue="Go Test.go test github.com/jhonynet/hlpr/pipeline" />
