@@ -3,17 +3,17 @@ package file
 import (
 	"context"
 	"fmt"
-	"github.com/jhonynet/hlpr/pipeline"
-	"github.com/jhonynet/hlpr/processor"
-	"github.com/jhonynet/hlpr/stages"
-	"github.com/jhonynet/hlpr/unit"
 	"os"
 	"sync"
+
+	"github.com/jhonynet/hlpr/pipeline"
+	"github.com/jhonynet/hlpr/processor"
+	"github.com/jhonynet/hlpr/unit"
 )
 
 var _ processor.Source = (*Processor)(nil)
 
-func (r *Processor) CreateSource(p *pipeline.Pipeline, stage *stages.Stage) processor.Source {
+func (r *Processor) CreateSource(p pipeline.Pipeline, stage pipeline.Stage) processor.Source {
 	return &Processor{
 		pipeline: p,
 		stage:    stage,

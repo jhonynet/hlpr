@@ -2,16 +2,16 @@ package http
 
 import (
 	"context"
+	"sync"
+
 	"github.com/jhonynet/hlpr/pipeline"
 	"github.com/jhonynet/hlpr/processor"
-	"github.com/jhonynet/hlpr/stages"
 	"github.com/jhonynet/hlpr/unit"
-	"sync"
 )
 
 var _ processor.Sink = (*Processor)(nil)
 
-func (r *Processor) CreateSink(pipeline *pipeline.Pipeline, stage *stages.Stage) processor.Sink {
+func (r *Processor) CreateSink(pipeline pipeline.Pipeline, stage pipeline.Stage) processor.Sink {
 	return &Processor{
 		stage:    stage,
 		pipeline: pipeline,

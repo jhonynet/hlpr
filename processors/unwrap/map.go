@@ -2,14 +2,14 @@ package unwrap
 
 import (
 	"context"
+	"sync"
+
 	"github.com/jhonynet/hlpr/pipeline"
 	"github.com/jhonynet/hlpr/processor"
-	"github.com/jhonynet/hlpr/stages"
 	"github.com/jhonynet/hlpr/unit"
-	"sync"
 )
 
-func (r *Processor) CreateMap(p *pipeline.Pipeline, s *stages.Stage) processor.Map {
+func (r *Processor) CreateMap(p pipeline.Pipeline, s pipeline.Stage) processor.Map {
 	return &Processor{
 		pipeline: p,
 		stage:    s,

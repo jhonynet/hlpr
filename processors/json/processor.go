@@ -2,23 +2,23 @@ package json
 
 import (
 	"fmt"
+	"reflect"
+
 	"github.com/jhonynet/hlpr/pipeline"
-	"github.com/jhonynet/hlpr/stages"
 	"github.com/jhonynet/hlpr/unit"
 	"github.com/json-iterator/go"
-	"reflect"
 )
 
 type Processor struct {
-	pipeline *pipeline.Pipeline
-	stage    *stages.Stage
+	pipeline pipeline.Pipeline
+	stage    pipeline.Stage
 }
 
 func (r *Processor) Identifier() string {
 	return StageIdentifier
 }
 
-func (r *Processor) Accepts(s *stages.Stage) bool {
+func (r *Processor) Accepts(s pipeline.Stage) bool {
 	return s.Type() == StageIdentifier
 }
 

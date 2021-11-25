@@ -2,9 +2,9 @@ package processor
 
 import (
 	"context"
-	"github.com/jhonynet/hlpr/pipeline"
-	"github.com/jhonynet/hlpr/stages"
 	"sync"
+
+	"github.com/jhonynet/hlpr/pipeline"
 
 	"github.com/jhonynet/hlpr/unit"
 )
@@ -15,7 +15,7 @@ type Processor interface {
 	Identifier() string
 
 	// Accepts returns the id of the processor.
-	Accepts(*stages.Stage) bool
+	Accepts(pipeline.Stage) bool
 }
 
 // Source represents a processor that's generates data.
@@ -23,7 +23,7 @@ type Source interface {
 	Processor
 
 	// Create Source
-	CreateSource(*pipeline.Pipeline, *stages.Stage) Source
+	CreateSource(pipeline.Pipeline, pipeline.Stage) Source
 
 	// Source will run this processor as source.
 	RunSource(context.Context, *sync.WaitGroup) (<-chan *unit.Data, <-chan unit.Error, error)
@@ -34,7 +34,7 @@ type Map interface {
 	Processor
 
 	// Create Map
-	CreateMap(*pipeline.Pipeline, *stages.Stage) Map
+	CreateMap(pipeline.Pipeline, pipeline.Stage) Map
 
 	// Map will run this processor as mapper.
 	RunMap(context.Context, <-chan *unit.Data, *sync.WaitGroup) (<-chan *unit.Data, <-chan unit.Error, error)
@@ -45,7 +45,7 @@ type Sink interface {
 	Processor
 
 	// Create Sink
-	CreateSink(*pipeline.Pipeline, *stages.Stage) Sink
+	CreateSink(pipeline.Pipeline, pipeline.Stage) Sink
 
 	// Sink will run this processor as sink.
 	RunSink(context.Context, <-chan *unit.Data, *sync.WaitGroup) (<-chan unit.Error, error)

@@ -2,13 +2,14 @@ package workload
 
 import (
 	"context"
+	"testing"
+
+	"github.com/jhonynet/hlpr/pipeline"
 	"github.com/jhonynet/hlpr/processor"
 	"github.com/jhonynet/hlpr/processors"
 	"github.com/jhonynet/hlpr/processors/raw"
 	"github.com/jhonynet/hlpr/processors/template"
-	"github.com/jhonynet/hlpr/stages"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 func TestBasicWorkload(t *testing.T) {
@@ -17,17 +18,17 @@ func TestBasicWorkload(t *testing.T) {
 	consoleOutputProcessor := &processors.ConsoleOutput{}
 
 	reg := &processor.Provider{
-		Source: rawInputProcessor.CreateSource(nil, &stages.Stage{
+		Source: rawInputProcessor.CreateSource(nil, &pipeline.Stage{
 			"data": []string{"jhony", "marcos"},
 		}),
 		Mappers: []processor.Map{
-			templateProcessor.CreateMap(nil, &stages.Stage{
+			templateProcessor.CreateMap(nil, &pipeline.Stage{
 				"output": "{{ . }} decorado por A",
 			}),
-			templateProcessor.CreateMap(nil, &stages.Stage{
+			templateProcessor.CreateMap(nil, &pipeline.Stage{
 				"output": "{{ . }}, decorado por B",
 			}),
-			templateProcessor.CreateMap(nil, &stages.Stage{
+			templateProcessor.CreateMap(nil, &pipeline.Stage{
 				"output": "{{ . }} y Decorado por C",
 			}),
 		},

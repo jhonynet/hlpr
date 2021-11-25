@@ -4,24 +4,24 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	"github.com/jhonynet/hlpr/pipeline"
-	"github.com/jhonynet/hlpr/stages"
-	"github.com/jhonynet/hlpr/unit"
-	"github.com/jhonynet/hlpr/utils/logger"
-	"go.uber.org/zap"
 	"io/ioutil"
 	"os"
 	"strings"
 	"sync"
+
+	"github.com/jhonynet/hlpr/pipeline"
+	"github.com/jhonynet/hlpr/unit"
+	"github.com/jhonynet/hlpr/utils/logger"
+	"go.uber.org/zap"
 )
 
 type Processor struct {
-	pipeline *pipeline.Pipeline
-	stage    *stages.Stage
+	pipeline pipeline.Pipeline
+	stage    pipeline.Stage
 }
 
 // Return if this processor accepts the stage.
-func (r *Processor) Accepts(s *stages.Stage) bool {
+func (r *Processor) Accepts(s pipeline.Stage) bool {
 	return s.Type() == StageIdentifier
 }
 

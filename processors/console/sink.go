@@ -2,18 +2,18 @@ package console
 
 import (
 	"context"
+	"sync"
+
 	"github.com/davecgh/go-spew/spew"
 	"github.com/jhonynet/hlpr/pipeline"
 	"github.com/jhonynet/hlpr/processor"
-	"github.com/jhonynet/hlpr/stages"
 	"github.com/jhonynet/hlpr/unit"
 	"github.com/jhonynet/hlpr/utils/logger"
-	"sync"
 )
 
 var _ processor.Sink = (*Processor)(nil)
 
-func (r *Processor) CreateSink(*pipeline.Pipeline, *stages.Stage) processor.Sink {
+func (r *Processor) CreateSink(pipeline.Pipeline, pipeline.Stage) processor.Sink {
 	return new(Processor)
 }
 

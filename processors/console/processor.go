@@ -1,14 +1,14 @@
 package console
 
 import (
-	"github.com/jhonynet/hlpr/stages"
+	"github.com/jhonynet/hlpr/pipeline"
 )
 
 const StageIdentifier = "console-output"
 
 type Processor struct{}
 
-func (r *Processor) Accepts(s *stages.Stage) bool {
+func (r *Processor) Accepts(s pipeline.Stage) bool {
 	return s.Type() == StageIdentifier
 }
 

@@ -3,14 +3,14 @@ package main
 import (
 	"errors"
 	"fmt"
+	"io/ioutil"
+
 	"github.com/jhonynet/hlpr/executor"
 	"github.com/jhonynet/hlpr/pipeline"
 	"github.com/jhonynet/hlpr/processors"
 	"github.com/jhonynet/hlpr/utils/logger"
 	"github.com/urfave/cli/v2"
 	"go.uber.org/zap"
-	"io/ioutil"
-	"path/filepath"
 )
 
 const (
@@ -59,13 +59,13 @@ func appHandler(zapLogger *zap.Logger) func(c *cli.Context) error {
 			return fmt.Errorf("cannot read workflow file %s", err)
 		}
 
-		def, err := pipeline.FromBytes(bytes, filepath.Ext(file))
+		pipeline, err := pipeline.FromYaml(bytes)
 		if err != nil {
 			return err
 		}
 
 		return executor.
 			NewDefaultExecutor(processors.DefaultRegistry).
-			Execute(ctx, pipeline.NewPipeline(def))
+			Execute(ctx, pipeline)
 	}
 }

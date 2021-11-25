@@ -1,14 +1,14 @@
 package raw
 
 import (
-	"github.com/jhonynet/hlpr/stages"
+	"github.com/jhonynet/hlpr/pipeline"
 )
 
 type Processor struct {
-	stage *stages.Stage
+	stage pipeline.Stage
 }
 
-func (r *Processor) Accepts(s *stages.Stage) bool {
+func (r *Processor) Accepts(s pipeline.Stage) bool {
 	return s.Type() == StageIdentifier
 }
 

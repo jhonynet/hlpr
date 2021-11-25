@@ -4,16 +4,16 @@ import (
 	"bytes"
 	"context"
 	"fmt"
+	"sync"
+
 	"github.com/jhonynet/hlpr/pipeline"
 	"github.com/jhonynet/hlpr/processor"
-	"github.com/jhonynet/hlpr/stages"
 	"github.com/jhonynet/hlpr/unit"
-	"sync"
 )
 
 var _ processor.Map = (*Processor)(nil)
 
-func (r *Processor) CreateMap(pipeline *pipeline.Pipeline, stage *stages.Stage) processor.Map {
+func (r *Processor) CreateMap(pipeline pipeline.Pipeline, stage pipeline.Stage) processor.Map {
 	return &Processor{
 		stage:    stage,
 		pipeline: pipeline,
@@ -27,7 +27,7 @@ func (r *Processor) RunMap(ctx context.Context, input <-chan *unit.Data, wg *syn
 	}
 
 	// render template
-	tpl, err := processor.NewTemplate(stage.Output, r.pipeline.Definition.Vars)
+	tpl, err := processor.NewTemplate(stage.Output, r.pipeline.Metadata.Globals)
 	if err != nil {
 		return nil, nil, fmt.Errorf("cannot parse template due an error %s", err)
 	}

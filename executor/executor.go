@@ -3,12 +3,13 @@ package executor
 import (
 	"context"
 	"fmt"
+	"sync"
+
 	"github.com/jhonynet/hlpr/pipeline"
 	"github.com/jhonynet/hlpr/processor"
 	"github.com/jhonynet/hlpr/utils/logger"
 	"github.com/jhonynet/hlpr/workload"
 	"go.uber.org/zap"
-	"sync"
 )
 
 type defaultExecutor struct {
@@ -21,11 +22,11 @@ func NewDefaultExecutor(registry processor.Registry) Executor {
 	}
 }
 
-func (d defaultExecutor) Execute(ctx context.Context, pipeline *pipeline.Pipeline) error {
+func (d defaultExecutor) Execute(ctx context.Context, pipeline pipeline.Pipeline) error {
 	processorProvider := new(processor.Provider)
 
 	// configure each processor
-	for idx, stage := range pipeline.Definition.Stages {
+	for idx, stage := range pipeline.Stages {
 		switch true {
 
 		case idx == 0: //first is source
@@ -42,7 +43,7 @@ func (d defaultExecutor) Execute(ctx context.Context, pipeline *pipeline.Pipelin
 
 			return fmt.Errorf("processor for stage %s cannot be used as source", stage.Type())
 
-		case len(pipeline.Definition.Stages) == idx+1: //last is sink
+		case len(pipeline.Stages) == idx+1: //last is sink
 			proc := d.processorRegistry.Get(stage)
 			if proc == nil {
 				return fmt.Errorf("processor for stage %s not found", stage.Type())

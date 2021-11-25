@@ -2,16 +2,15 @@ package jq
 
 import (
 	"github.com/jhonynet/hlpr/pipeline"
-	"github.com/jhonynet/hlpr/stages"
 )
 
 // Raw Input Processor allows to inject custom data into the workflow.
 type Processor struct {
-	pipeline *pipeline.Pipeline
-	stage    *stages.Stage
+	pipeline pipeline.Pipeline
+	stage    pipeline.Stage
 }
 
-func (r *Processor) Accepts(s *stages.Stage) bool {
+func (r *Processor) Accepts(s pipeline.Stage) bool {
 	return s.Type() == StageIdentifier
 }
 

@@ -5,23 +5,23 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/jhonynet/hlpr/pipeline"
-	"github.com/jhonynet/hlpr/processor"
-	"github.com/jhonynet/hlpr/stages"
-	"github.com/jhonynet/hlpr/unit"
-	"github.com/jhonynet/hlpr/utils"
-	"github.com/jhonynet/hlpr/utils/logger"
 	"io/ioutil"
 	"net/http"
 	"sync"
+
+	"github.com/jhonynet/hlpr/pipeline"
+	"github.com/jhonynet/hlpr/processor"
+	"github.com/jhonynet/hlpr/unit"
+	"github.com/jhonynet/hlpr/utils"
+	"github.com/jhonynet/hlpr/utils/logger"
 )
 
 type Processor struct {
-	pipeline *pipeline.Pipeline
-	stage    *stages.Stage
+	pipeline pipeline.Pipeline
+	stage    pipeline.Stage
 }
 
-func (r *Processor) Accepts(s *stages.Stage) bool {
+func (r *Processor) Accepts(s pipeline.Stage) bool {
 	return s.Type() == StageIdentifier
 }
 
@@ -120,7 +120,7 @@ func (r *Processor) renderHeaders(stage Stage, data *unit.Data) (http.Header, er
 	for key, template := range stage.Headers {
 		// todo: if this is not a template just set it.
 		var value bytes.Buffer
-		headerTpl, err := processor.NewTemplate(template, r.pipeline.Definition.Vars)
+		headerTpl, err := processor.NewTemplate(template, r.pipeline.Metadata.Globals)
 		if err != nil {
 			return nil, fmt.Errorf("cannot create template for header %s:%s => %w", key, template, err)
 		}

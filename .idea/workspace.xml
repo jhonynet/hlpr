@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ff659bab-5164-480b-a0ad-4fcbf583ef44" name="Default Changelist" comment="* remove sensitive files.">
+      <change beforePath="$PROJECT_DIR$/.idea/hlpr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hlpr.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executor/executor.go" beforeDir="false" afterPath="$PROJECT_DIR$/executor/executor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executor/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/executor/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/definition.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/definition_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/pipeline.go" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/pipeline.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/processor/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/registry.go" beforeDir="false" afterPath="$PROJECT_DIR$/processor/registry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/console/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/console/processor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/console/sink.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/console/sink.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/file/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/file/processor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/file/sink.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/file/sink.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/file/source.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/file/source.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/http/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/http/map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/http/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/http/processor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/http/sink.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/http/sink.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/http/source.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/http/source.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processors/jq/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/jq/map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/jq/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/jq/processor.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processors/json/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/json/map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/json/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/json/processor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/raw/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/raw/processor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/raw/source.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/raw/source.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processors/template/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/template/map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/template/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/template/processor.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processors/unwrap/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/unwrap/map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processors/unwrap/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/unwrap/processor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stages/stage.go" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/stage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workload/workload_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/workload/workload_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go@1.14/1.14.9/libexec" />
+  <component name="GOROOT" url="file:///usr/local/Cellar/go@1.14/1.14.9/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -39,7 +68,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -65,18 +93,18 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/processors/template" />
-      <recent name="$PROJECT_DIR$/processors/raw" />
-      <recent name="$PROJECT_DIR$/processors/file" />
-      <recent name="$PROJECT_DIR$/processors/http" />
-      <recent name="$PROJECT_DIR$/utils/logger" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/processors/jq" />
       <recent name="$PROJECT_DIR$/tasks/test" />
       <recent name="$PROJECT_DIR$/src/hlpr" />
       <recent name="$PROJECT_DIR$/tasks/api-to-csv" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pipeline" />
+      <recent name="$PROJECT_DIR$/processors/template" />
+      <recent name="$PROJECT_DIR$/processors/raw" />
+      <recent name="$PROJECT_DIR$/processors/file" />
+      <recent name="$PROJECT_DIR$/processors/http" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.RUN get-java-apps">
@@ -85,9 +113,9 @@
       <working_directory value="$PROJECT_DIR$/tasks/file/" />
       <parameters value="-v task.yml" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/src/main.go" />
       <package value="github.com/jhonynet/hlpr" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="RUN get-java-apps" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -95,9 +123,9 @@
       <working_directory value="$USER_HOME$/Desktop/hlpr/get-java-apps/" />
       <parameters value="-v get-java-apps.yml" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/src/main.go" />
       <package value="github.com/jhonynet/hlpr" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="RUN test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
@@ -105,62 +133,62 @@
       <working_directory value="$PROJECT_DIR$/tasks/test/" />
       <parameters value="-v task.yaml" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/src/main.go" />
       <package value="github.com/jhonynet/hlpr" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="TestFromBytes in github.com/jhonynet/hlpr/pipeline" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="hlpr" />
       <working_directory value="$PROJECT_DIR$/pipeline" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="github.com/jhonynet/hlpr/pipeline" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
+      <framework value="gotest" />
       <pattern value="^TestFromBytes$" />
       <method v="2" />
     </configuration>
     <configuration name="go test github.com/jhonynet/hlpr/pipeline" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="hlpr" />
       <working_directory value="$PROJECT_DIR$/pipeline" />
-      <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="github.com/jhonynet/hlpr/pipeline" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <configuration name="go test hlpr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="hlpr" />
       <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
       <kind value="DIRECTORY" />
       <package value="github.com/jhonynet/hlpr" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <configuration name="go test pipeline" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="hlpr" />
       <working_directory value="$PROJECT_DIR$/pipeline" />
-      <framework value="gotest" />
       <kind value="DIRECTORY" />
       <package value="github.com/jhonynet/hlpr" />
       <directory value="$PROJECT_DIR$/pipeline" />
       <filePath value="$PROJECT_DIR$/" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go Build.RUN file task" />
       <item itemvalue="Go Build.RUN get-java-apps" />
+      <item itemvalue="Go Build.RUN api-to-csv" />
+      <item itemvalue="Go Build.RUN simple-task" />
       <item itemvalue="Go Build.RUN test" />
       <item itemvalue="Go Test.TestFromBytes in github.com/jhonynet/hlpr/pipeline" />
       <item itemvalue="Go Test.go test github.com/jhonynet/hlpr/pipeline" />
       <item itemvalue="Go Test.go test hlpr" />
       <item itemvalue="Go Test.go test pipeline" />
-      <item itemvalue="Go Build.RUN api-to-csv" />
-      <item itemvalue="Go Build.RUN simple-task" />
     </list>
     <recent_temporary>
       <list>
@@ -489,167 +517,6 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="448" y="179" key="#Go_Modules_(vgo)" timestamp="1620621920902">
-      <screen x="0" y="25" width="1680" height="980" />
-    </state>
-    <state x="448" y="179" key="#Go_Modules_(vgo)/0.25.1680.980@0.25.1680.980" timestamp="1620621920902" />
-    <state x="543" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629170000829">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state x="475" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1625810045010" />
-    <state x="475" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.980@0.25.1680.980" timestamp="1621831305616" />
-    <state x="543" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629170000829" />
-    <state x="651" y="319" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626061093691">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="570" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1623902243368" />
-    <state x="570" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1680.980@0.25.1680.980" timestamp="1621204238661" />
-    <state x="651" y="319" key="#com.intellij.fileTypes.FileTypeChooser/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626061093691" />
-    <state x="535" y="150" key="#go_build_workflow.go" timestamp="1621872659318">
-      <screen x="0" y="25" width="1680" height="980" />
-    </state>
-    <state x="535" y="150" key="#go_build_workflow.go/0.25.1680.980@0.25.1680.980" timestamp="1621872659318" />
-    <state x="603" y="121" width="587" height="753" key="#xdebugger.evaluate" timestamp="1621987027465">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="603" y="121" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1621987027465" />
-    <state x="603" y="138" width="587" height="753" key="#xdebugger.evaluate/0.25.1680.980@0.25.1680.980" timestamp="1621872818042" />
-    <state x="0" y="25" width="1680" height="1050" key="CommitChangelistDialog2" timestamp="1629168078511">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state x="0" y="0" width="1680" height="1050" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1625549561994" />
-    <state x="414" y="25" width="840" height="980" key="CommitChangelistDialog2/0.25.1680.980@0.25.1680.980" timestamp="1621874088870" />
-    <state x="0" y="0" key="CommitChangelistDialog2/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062474032" />
-    <state x="0" y="25" key="CommitChangelistDialog2/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629168078511" />
-    <state x="100" y="107" width="1480" height="780" key="DiffContextDialog" timestamp="1624092657267">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="100" y="107" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1624092657267" />
-    <state x="100" y="125" width="1480" height="780" key="DiffContextDialog/0.25.1680.980@0.25.1680.980" timestamp="1621188691229" />
-    <state x="498" y="293" width="699" height="691" key="EditFileWatcherDialog" timestamp="1620966748282">
-      <screen x="0" y="25" width="1680" height="980" />
-    </state>
-    <state x="498" y="293" width="699" height="691" key="EditFileWatcherDialog/0.25.1680.980@0.25.1680.980" timestamp="1620966748282" />
-    <state width="1878" height="466" key="GridCell.Tab.0.bottom" timestamp="1629170354067">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1638" height="288" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485452" />
-    <state width="1638" height="276" key="GridCell.Tab.0.bottom/0.25.1680.980@0.25.1680.980" timestamp="1621891954018" />
-    <state width="1878" height="320" key="GridCell.Tab.0.bottom/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062194688" />
-    <state width="1878" height="466" key="GridCell.Tab.0.bottom/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629170354067" />
-    <state width="1878" height="466" key="GridCell.Tab.0.center" timestamp="1629170354065">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1638" height="288" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485450" />
-    <state width="1638" height="276" key="GridCell.Tab.0.center/0.25.1680.980@0.25.1680.980" timestamp="1621891954018" />
-    <state width="1878" height="320" key="GridCell.Tab.0.center/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062194686" />
-    <state width="1878" height="466" key="GridCell.Tab.0.center/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629170354065" />
-    <state width="1878" height="466" key="GridCell.Tab.0.left" timestamp="1629170354064">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1638" height="288" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485448" />
-    <state width="1638" height="276" key="GridCell.Tab.0.left/0.25.1680.980@0.25.1680.980" timestamp="1621891954018" />
-    <state width="1878" height="320" key="GridCell.Tab.0.left/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062194684" />
-    <state width="1878" height="466" key="GridCell.Tab.0.left/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629170354064" />
-    <state width="1878" height="466" key="GridCell.Tab.0.right" timestamp="1629170354066">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1638" height="288" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485451" />
-    <state width="1638" height="276" key="GridCell.Tab.0.right/0.25.1680.980@0.25.1680.980" timestamp="1621891954018" />
-    <state width="1878" height="320" key="GridCell.Tab.0.right/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062194687" />
-    <state width="1878" height="466" key="GridCell.Tab.0.right/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629170354066" />
-    <state width="1878" height="604" key="GridCell.Tab.1.bottom" timestamp="1626060295442">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1638" height="288" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485455" />
-    <state width="1638" height="276" key="GridCell.Tab.1.bottom/0.25.1680.980@0.25.1680.980" timestamp="1621891954019" />
-    <state width="1878" height="604" key="GridCell.Tab.1.bottom/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626060295442" />
-    <state width="1878" height="604" key="GridCell.Tab.1.center" timestamp="1626060295441">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1638" height="288" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485454" />
-    <state width="1638" height="276" key="GridCell.Tab.1.center/0.25.1680.980@0.25.1680.980" timestamp="1621891954019" />
-    <state width="1878" height="604" key="GridCell.Tab.1.center/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626060295441" />
-    <state width="1878" height="604" key="GridCell.Tab.1.left" timestamp="1626060295441">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1638" height="288" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485453" />
-    <state width="1638" height="276" key="GridCell.Tab.1.left/0.25.1680.980@0.25.1680.980" timestamp="1621891954019" />
-    <state width="1878" height="604" key="GridCell.Tab.1.left/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626060295441" />
-    <state width="1878" height="604" key="GridCell.Tab.1.right" timestamp="1626060295442">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1638" height="288" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485454" />
-    <state width="1638" height="276" key="GridCell.Tab.1.right/0.25.1680.980@0.25.1680.980" timestamp="1621891954019" />
-    <state width="1878" height="604" key="GridCell.Tab.1.right/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626060295442" />
-    <state x="1061" y="131" key="RollbackChangesDialog" timestamp="1625539606095">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="1061" y="131" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1625539606095" />
-    <state x="1061" y="147" key="RollbackChangesDialog/0.25.1680.980@0.25.1680.980" timestamp="1621220715682" />
-    <state x="399" y="174" key="SettingsEditor" timestamp="1629168005361">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state x="349" y="148" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1625809472714" />
-    <state x="349" y="163" key="SettingsEditor/0.25.1680.980@0.25.1680.980" timestamp="1621204009041" />
-    <state x="399" y="174" key="SettingsEditor/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629168005361" />
-    <state width="572" height="491" key="SwitcherDM" timestamp="1626060913707">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="500" height="477" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1625809666852" />
-    <state width="500" height="445" key="SwitcherDM/0.25.1680.980@0.25.1680.980" timestamp="1621833611954" />
-    <state width="572" height="491" key="SwitcherDM/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626060913707" />
-    <state x="503" y="248" key="Vcs.Push.Dialog.v2" timestamp="1626062475317">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="440" y="241" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1625549565636" />
-    <state x="440" y="250" key="Vcs.Push.Dialog.v2/0.25.1680.980@0.25.1680.980" timestamp="1621874089889" />
-    <state x="503" y="248" key="Vcs.Push.Dialog.v2/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062475317" />
-    <state width="840" height="525" key="XDebugger.FullValuePopup" timestamp="1625548861285">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="840" height="525" key="XDebugger.FullValuePopup/0.0.1680.1050@0.0.1680.1050" timestamp="1625548861285" />
-    <state width="840" height="490" key="XDebugger.FullValuePopup/0.25.1680.980@0.25.1680.980" timestamp="1621872923517" />
-    <state x="620" y="100" key="com.goide.refactor.move.GoMoveDeclarationDialog" timestamp="1620708943351">
-      <screen x="0" y="25" width="1680" height="980" />
-    </state>
-    <state x="620" y="100" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.25.1680.980@0.25.1680.980" timestamp="1620708943351" />
-    <state x="96" y="84" width="1484" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1625539801322">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="96" y="84" width="1484" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1625539801322" />
-    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1623640507516">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1623640507516" />
-    <state x="573" y="255" width="944" height="571" key="find.popup" timestamp="1626062290695">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="501" y="248" width="826" height="555" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1625549404318" />
-    <state x="501" y="256" width="826" height="518" key="find.popup/0.25.1680.980@0.25.1680.980" timestamp="1621220657259" />
-    <state x="573" y="255" width="944" height="571" key="find.popup/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062290695" />
-    <state x="590" y="152" key="git4idea.branch.GitSmartOperationDialog" timestamp="1621827967529">
-      <screen x="0" y="25" width="1680" height="980" />
-    </state>
-    <state x="590" y="152" key="git4idea.branch.GitSmartOperationDialog/0.25.1680.980@0.25.1680.980" timestamp="1621827967529" />
-    <state width="600" height="472" key="javadoc.popup" timestamp="1624236900701">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="600" height="472" key="javadoc.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1624236900701" />
-    <state width="600" height="440" key="javadoc.popup/0.25.1680.980@0.25.1680.980" timestamp="1621209172851" />
-    <state x="993" y="110" key="refactoring.ChangeSignatureDialog" timestamp="1625547359189">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="993" y="110" key="refactoring.ChangeSignatureDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1625547359189" />
-    <state x="993" y="128" key="refactoring.ChangeSignatureDialog/0.25.1680.980@0.25.1680.980" timestamp="1621814341054" />
-    <state x="577" y="238" width="766" height="746" key="search.everywhere.popup" timestamp="1626054398885">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="505" y="231" width="670" height="725" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1625810159895" />
-    <state x="505" y="241" width="670" height="676" key="search.everywhere.popup/0.25.1680.980@0.25.1680.980" timestamp="1621207831397" />
-    <state x="577" y="238" width="766" height="746" key="search.everywhere.popup/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626054398885" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

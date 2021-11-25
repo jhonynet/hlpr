@@ -3,16 +3,16 @@ package raw
 import (
 	"context"
 	"errors"
+	"sync"
+
 	"github.com/jhonynet/hlpr/pipeline"
 	"github.com/jhonynet/hlpr/processor"
-	"github.com/jhonynet/hlpr/stages"
 	"github.com/jhonynet/hlpr/unit"
-	"sync"
 )
 
 var _ processor.Source = (*Processor)(nil)
 
-func (r *Processor) CreateSource(_ *pipeline.Pipeline, stage *stages.Stage) processor.Source {
+func (r *Processor) CreateSource(_ pipeline.Pipeline, stage pipeline.Stage) processor.Source {
 	return &Processor{
 		stage: stage,
 	}
