@@ -5,7 +5,9 @@ import (
 )
 
 // Stage struct represents a step in a workflow.
-type Stage map[string]interface{}
+// stage has 3 representations
+// namespace like, file::read::data.json
+type Stage []interface{}
 
 // Type return the stage type.
 func (s Stage) Type() string {

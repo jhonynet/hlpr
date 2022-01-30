@@ -1,0 +1,337 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"ff659bab-5164-480b-a0ad-4fcbf583ef44\" name=\"Default Changelist\" comment=\"* remove sensitive files.\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/processors/jq/map.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/processors/jq/map.go\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/processors/json/map.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/processors/json/map.go\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/processors/template/map.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/processors/template/map.go\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/processors/unwrap/map.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/processors/unwrap/map.go\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"CoverageViewManager\">\n    <option name=\"myElementSize\" value=\"375\" />\n  </component>\n  <component name=\"FavoritesManager\">\n    <favorites_list name=\"hlpr\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Go File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"GOROOT\" path=\"/usr/local/Cellar/go@1.14/1.14.9/libexec\" />\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1sKVmGgQK6gpKQwwul3cTzFTCu4\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showExcludedFiles\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"DefaultGoTemplateProperty\" value=\"Go File\" />\n    <property name=\"GO_FMT\" value=\"true\" />\n    <property name=\"NewWatcherDialog.advanced.open\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"configurable.Global.GOPATH.is.expanded\" value=\"true\" />\n    <property name=\"configurable.Module.GOPATH.is.expanded\" value=\"false\" />\n    <property name=\"configurable.Project.GOPATH.is.expanded\" value=\"true\" />\n    <property name=\"go.import.settings.migrated\" value=\"true\" />\n    <property name=\"go.sdk.automatically.set\" value=\"true\" />\n    <property name=\"go.tried.to.enable.integration.vgo.integrator\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/processors/jq\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"restartRequiresConfirmation\" value=\"false\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"terminal\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/processors/template\" />\n      <recent name=\"$PROJECT_DIR$/processors/raw\" />\n      <recent name=\"$PROJECT_DIR$/processors/file\" />\n      <recent name=\"$PROJECT_DIR$/processors/http\" />\n      <recent name=\"$PROJECT_DIR$/utils/logger\" />\n    </key>\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/processors/jq\" />\n      <recent name=\"$PROJECT_DIR$/tasks/test\" />\n      <recent name=\"$PROJECT_DIR$/src/hlpr\" />\n      <recent name=\"$PROJECT_DIR$/tasks/api-to-csv\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Go Build.RUN get-java-apps\">\n    <configuration name=\"RUN file task\" type=\"GoApplicationRunConfiguration\" factoryName=\"Go Application\">\n      <module name=\"hlpr\" />\n      <working_directory value=\"$PROJECT_DIR$/tasks/file/\" />\n      <parameters value=\"-v task.yml\" />\n      <kind value=\"PACKAGE\" />\n      <filePath value=\"$PROJECT_DIR$/src/main.go\" />\n      <package value=\"github.com/jhonynet/hlpr\" />\n      <directory value=\"$PROJECT_DIR$/\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"RUN get-java-apps\" type=\"GoApplicationRunConfiguration\" factoryName=\"Go Application\">\n      <module name=\"hlpr\" />\n      <working_directory value=\"$USER_HOME$/Desktop/hlpr/get-java-apps/\" />\n      <parameters value=\"-v get-java-apps.yml\" />\n      <kind value=\"PACKAGE\" />\n      <filePath value=\"$PROJECT_DIR$/src/main.go\" />\n      <package value=\"github.com/jhonynet/hlpr\" />\n      <directory value=\"$PROJECT_DIR$/\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"RUN test\" type=\"GoApplicationRunConfiguration\" factoryName=\"Go Application\" temporary=\"true\">\n      <module name=\"hlpr\" />\n      <working_directory value=\"$PROJECT_DIR$/tasks/test/\" />\n      <parameters value=\"-v task.yaml\" />\n      <kind value=\"PACKAGE\" />\n      <filePath value=\"$PROJECT_DIR$/src/main.go\" />\n      <package value=\"github.com/jhonynet/hlpr\" />\n      <directory value=\"$PROJECT_DIR$/\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"TestFromBytes in github.com/jhonynet/hlpr/pipeline\" type=\"GoTestRunConfiguration\" factoryName=\"Go Test\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"hlpr\" />\n      <working_directory value=\"$PROJECT_DIR$/pipeline\" />\n      <framework value=\"gotest\" />\n      <kind value=\"PACKAGE\" />\n      <package value=\"github.com/jhonynet/hlpr/pipeline\" />\n      <directory value=\"$PROJECT_DIR$/\" />\n      <filePath value=\"$PROJECT_DIR$/\" />\n      <pattern value=\"^TestFromBytes$\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"go test github.com/jhonynet/hlpr/pipeline\" type=\"GoTestRunConfiguration\" factoryName=\"Go Test\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"hlpr\" />\n      <working_directory value=\"$PROJECT_DIR$/pipeline\" />\n      <framework value=\"gotest\" />\n      <kind value=\"PACKAGE\" />\n      <package value=\"github.com/jhonynet/hlpr/pipeline\" />\n      <directory value=\"$PROJECT_DIR$/\" />\n      <filePath value=\"$PROJECT_DIR$/\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"go test hlpr\" type=\"GoTestRunConfiguration\" factoryName=\"Go Test\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"hlpr\" />\n      <working_directory value=\"$PROJECT_DIR$\" />\n      <framework value=\"gotest\" />\n      <kind value=\"DIRECTORY\" />\n      <package value=\"github.com/jhonynet/hlpr\" />\n      <directory value=\"$PROJECT_DIR$\" />\n      <filePath value=\"$PROJECT_DIR$/\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"go test pipeline\" type=\"GoTestRunConfiguration\" factoryName=\"Go Test\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"hlpr\" />\n      <working_directory value=\"$PROJECT_DIR$/pipeline\" />\n      <framework value=\"gotest\" />\n      <kind value=\"DIRECTORY\" />\n      <package value=\"github.com/jhonynet/hlpr\" />\n      <directory value=\"$PROJECT_DIR$/pipeline\" />\n      <filePath value=\"$PROJECT_DIR$/\" />\n      <method v=\"2\" />\n    </configuration>\n    <list>\n      <item itemvalue=\"Go Build.RUN file task\" />\n      <item itemvalue=\"Go Build.RUN get-java-apps\" />\n      <item itemvalue=\"Go Build.RUN test\" />\n      <item itemvalue=\"Go Test.TestFromBytes in github.com/jhonynet/hlpr/pipeline\" />\n      <item itemvalue=\"Go Test.go test github.com/jhonynet/hlpr/pipeline\" />\n      <item itemvalue=\"Go Test.go test hlpr\" />\n      <item itemvalue=\"Go Test.go test pipeline\" />\n      <item itemvalue=\"Go Build.RUN api-to-csv\" />\n      <item itemvalue=\"Go Build.RUN simple-task\" />\n    </list>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Go Test.go test hlpr\" />\n        <item itemvalue=\"Go Test.go test pipeline\" />\n        <item itemvalue=\"Go Test.go test github.com/jhonynet/hlpr/pipeline\" />\n        <item itemvalue=\"Go Test.TestFromBytes in github.com/jhonynet/hlpr/pipeline\" />\n        <item itemvalue=\"Go Build.RUN test\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"ff659bab-5164-480b-a0ad-4fcbf583ef44\" name=\"Default Changelist\" comment=\"\" />\n      <created>1620621425003</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1620621425003</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"first commit.\">\n      <created>1621185850332</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621185850332</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"add documentation.\">\n      <created>1621186690637</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621186690637</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"* raw input generator now read parametrized data.\">\n      <created>1621188662635</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621188662635</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"* remove .idea folder&#10;* add .gitignore\">\n      <created>1621188743819</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621188743819</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"* reorder project files.\">\n      <created>1621192501210</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621192501210</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"* reorder project files.\">\n      <created>1621192513501</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621192513501</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"* some renamings.\">\n      <created>1621192754271</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621192754271</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"* http processor.&#10;* transform abstract stage to map.\">\n      <created>1621201978462</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621201978462</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"* partial http processor support.&#10;* add template processor.\">\n      <created>1621214004896</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621214004896</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"* add http concurrency support.&#10;* add file processor.\">\n      <created>1621219781701</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621219781701</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"* idiomatic go.\">\n      <created>1621219981222</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621219981222</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"* rename function name.\">\n      <created>1621220085380</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621220085380</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"* add readme.\">\n      <created>1621220737630</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621220737630</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"* add &quot;vars&quot; template func.\">\n      <created>1621815527702</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621815527702</updated>\n    </task>\n    <task id=\"LOCAL-00015\" summary=\"* rename StageProcessor.Process to StageProcessor.Setup\">\n      <created>1621830314222</created>\n      <option name=\"number\" value=\"00015\" />\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621830314222</updated>\n    </task>\n    <task id=\"LOCAL-00016\" summary=\"* create a local struct for templating (for easy dataUnit rendering).\">\n      <created>1621874089102</created>\n      <option name=\"number\" value=\"00016\" />\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621874089102</updated>\n    </task>\n    <task id=\"LOCAL-00017\" summary=\"* complete expand processor.\">\n      <created>1621995473512</created>\n      <option name=\"number\" value=\"00017\" />\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1621995473512</updated>\n    </task>\n    <task id=\"LOCAL-00018\" summary=\"* massive refactor.\">\n      <created>1622437646728</created>\n      <option name=\"number\" value=\"00018\" />\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1622437646728</updated>\n    </task>\n    <task id=\"LOCAL-00019\" summary=\"* massive refactor.\">\n      <created>1622437651159</created>\n      <option name=\"number\" value=\"00019\" />\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1622437651159</updated>\n    </task>\n    <task id=\"LOCAL-00020\" summary=\"* massive refactor.\">\n      <created>1622437656697</created>\n      <option name=\"number\" value=\"00020\" />\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1622437656697</updated>\n    </task>\n    <task id=\"LOCAL-00021\" summary=\"* massive refactor.\">\n      <created>1622438032909</created>\n      <option name=\"number\" value=\"00021\" />\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1622438032909</updated>\n    </task>\n    <task id=\"LOCAL-00022\" summary=\"* massive refactor.\">\n      <created>1623653301122</created>\n      <option name=\"number\" value=\"00022\" />\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1623653301122</updated>\n    </task>\n    <task id=\"LOCAL-00023\" summary=\"* move all files.\">\n      <created>1623902069860</created>\n      <option name=\"number\" value=\"00023\" />\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1623902069860</updated>\n    </task>\n    <task id=\"LOCAL-00024\" summary=\"* fix gitignore\">\n      <created>1623902090730</created>\n      <option name=\"number\" value=\"00024\" />\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1623902090730</updated>\n    </task>\n    <task id=\"LOCAL-00025\" summary=\"* add pipeline definition\">\n      <created>1623903958280</created>\n      <option name=\"number\" value=\"00025\" />\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1623903958280</updated>\n    </task>\n    <task id=\"LOCAL-00026\" summary=\"* add pipeline definition\">\n      <created>1623904137297</created>\n      <option name=\"number\" value=\"00026\" />\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1623904137297</updated>\n    </task>\n    <task id=\"LOCAL-00027\" summary=\"* first working example.\">\n      <created>1624083035524</created>\n      <option name=\"number\" value=\"00027\" />\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1624083035524</updated>\n    </task>\n    <task id=\"LOCAL-00028\" summary=\"* use new instead struct literal.&#10;* some renaming\">\n      <created>1624083756569</created>\n      <option name=\"number\" value=\"00028\" />\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1624083756569</updated>\n    </task>\n    <task id=\"LOCAL-00029\" summary=\"* all data channels pass pointers to data\">\n      <created>1624085720850</created>\n      <option name=\"number\" value=\"00029\" />\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1624085720850</updated>\n    </task>\n    <task id=\"LOCAL-00030\" summary=\"* replace logrus with zap.\">\n      <created>1624090900260</created>\n      <option name=\"number\" value=\"00030\" />\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1624090900260</updated>\n    </task>\n    <task id=\"LOCAL-00031\" summary=\"* add file processor.\">\n      <created>1624092679247</created>\n      <option name=\"number\" value=\"00031\" />\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1624092679247</updated>\n    </task>\n    <task id=\"LOCAL-00032\" summary=\"* rename processors.\">\n      <created>1624092810044</created>\n      <option name=\"number\" value=\"00032\" />\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1624092810044</updated>\n    </task>\n    <task id=\"LOCAL-00033\" summary=\"* remove debug.\">\n      <created>1624092840578</created>\n      <option name=\"number\" value=\"00033\" />\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1624092840578</updated>\n    </task>\n    <task id=\"LOCAL-00034\" summary=\"* add source support to file processor.\">\n      <created>1624237505529</created>\n      <option name=\"number\" value=\"00034\" />\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1624237505529</updated>\n    </task>\n    <task id=\"LOCAL-00035\" summary=\"* change setup for run.\">\n      <created>1625539840376</created>\n      <option name=\"number\" value=\"00035\" />\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1625539840376</updated>\n    </task>\n    <task id=\"LOCAL-00036\" summary=\"* working\">\n      <created>1625549562178</created>\n      <option name=\"number\" value=\"00036\" />\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1625549562178</updated>\n    </task>\n    <task id=\"LOCAL-00037\" summary=\"* wrap processors in folders.&#10;* implement jq processor.&#10;* implement unwrap processor.&#10;* implement json processor.&#10;* add logs.\">\n      <created>1626062179869</created>\n      <option name=\"number\" value=\"00037\" />\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1626062179869</updated>\n    </task>\n    <task id=\"LOCAL-00038\" summary=\"* remove sensitive files.\">\n      <created>1626062474157</created>\n      <option name=\"number\" value=\"00038\" />\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1626062474157</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"39\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"1\" />\n  </component>\n  <component name=\"UnknownFeatures\">\n    <option featureType=\"com.intellij.fileTypeFactory\" implementationName=\"*.csv\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"CHECK_NEW_TODO\" value=\"false\" />\n    <MESSAGE value=\"* add http concurrency support.&#10;* add file processor.\" />\n    <MESSAGE value=\"* idiomatic go.\" />\n    <MESSAGE value=\"* rename function name.\" />\n    <MESSAGE value=\"* add readme.\" />\n    <MESSAGE value=\"* add &quot;vars&quot; template func.\" />\n    <MESSAGE value=\"* rename StageProcessor.Process to StageProcessor.Setup\" />\n    <MESSAGE value=\"* create a local struct for templating (for easy dataUnit rendering).\" />\n    <MESSAGE value=\"* complete expand processor.\" />\n    <MESSAGE value=\"* massive refactor.\" />\n    <MESSAGE value=\"* move all files.\" />\n    <MESSAGE value=\"* fix gitignore\" />\n    <MESSAGE value=\"* add pipeline definition.go\" />\n    <MESSAGE value=\"* add pipeline definition\" />\n    <MESSAGE value=\"* first working example.\" />\n    <MESSAGE value=\"* use new instead struct literal.&#10;* some renaming\" />\n    <MESSAGE value=\"* all data channels pass pointers to data\" />\n    <MESSAGE value=\"* replace logrus with zap.\" />\n    <MESSAGE value=\"* add file processor.\" />\n    <MESSAGE value=\"* rename processors.\" />\n    <MESSAGE value=\"* remove debug.\" />\n    <MESSAGE value=\"* add source support to file processor.\" />\n    <MESSAGE value=\"* change setup for run.\" />\n    <MESSAGE value=\"* working\" />\n    <MESSAGE value=\"* wrap processors in folders.&#10;* implement jq processor.&#10;* implement unwrap processor.&#10;* implement json processor.&#10;* add logs.\" />\n    <MESSAGE value=\"* remove sensitive files.\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"* remove sensitive files.\" />\n    <option name=\"OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT\" value=\"true\" />\n    <option name=\"REFORMAT_BEFORE_PROJECT_COMMIT\" value=\"true\" />\n    <option name=\"REARRANGE_BEFORE_PROJECT_COMMIT\" value=\"true\" />\n  </component>\n  <component name=\"VgoProject\">\n    <integration-enabled>true</integration-enabled>\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"448\" y=\"179\" key=\"#Go_Modules_(vgo)\" timestamp=\"1620621920902\">\n      <screen x=\"0\" y=\"25\" width=\"1680\" height=\"980\" />\n    </state>\n    <state x=\"448\" y=\"179\" key=\"#Go_Modules_(vgo)/0.25.1680.980@0.25.1680.980\" timestamp=\"1620621920902\" />\n    <state x=\"543\" y=\"185\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1629170000829\">\n      <screen x=\"0\" y=\"25\" width=\"1920\" height=\"1055\" />\n    </state>\n    <state x=\"475\" y=\"159\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625810045010\" />\n    <state x=\"475\" y=\"173\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.980@0.25.1680.980\" timestamp=\"1621831305616\" />\n    <state x=\"543\" y=\"185\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055\" timestamp=\"1629170000829\" />\n    <state x=\"651\" y=\"319\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1626061093691\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"570\" y=\"310\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1623902243368\" />\n    <state x=\"570\" y=\"314\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.25.1680.980@0.25.1680.980\" timestamp=\"1621204238661\" />\n    <state x=\"651\" y=\"319\" key=\"#com.intellij.fileTypes.FileTypeChooser/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626061093691\" />\n    <state x=\"535\" y=\"150\" key=\"#go_build_workflow.go\" timestamp=\"1621872659318\">\n      <screen x=\"0\" y=\"25\" width=\"1680\" height=\"980\" />\n    </state>\n    <state x=\"535\" y=\"150\" key=\"#go_build_workflow.go/0.25.1680.980@0.25.1680.980\" timestamp=\"1621872659318\" />\n    <state x=\"603\" y=\"121\" width=\"587\" height=\"753\" key=\"#xdebugger.evaluate\" timestamp=\"1621987027465\">\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1050\" />\n    </state>\n    <state x=\"603\" y=\"121\" key=\"#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1621987027465\" />\n    <state x=\"603\" y=\"138\" width=\"587\" height=\"753\" key=\"#xdebugger.evaluate/0.25.1680.980@0.25.1680.980\" timestamp=\"1621872818042\" />\n    <state x=\"0\" y=\"25\" width=\"1680\" height=\"1050\" key=\"CommitChangelistDialog2\" timestamp=\"1629168078511\">\n      <screen x=\"0\" y=\"25\" width=\"1920\" height=\"1055\" />\n    </state>\n    <state x=\"0\" y=\"0\" width=\"1680\" height=\"1050\" key=\"CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625549561994\" />\n    <state x=\"414\" y=\"25\" width=\"840\" height=\"980\" key=\"CommitChangelistDialog2/0.25.1680.980@0.25.1680.980\" timestamp=\"1621874088870\" />\n    <state x=\"0\" y=\"0\" key=\"CommitChangelistDialog2/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626062474032\" />\n    <state x=\"0\" y=\"25\" key=\"CommitChangelistDialog2/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055\" timestamp=\"1629168078511\" />\n    <state x=\"100\" y=\"107\" width=\"1480\" height=\"780\" key=\"DiffContextDialog\" timestamp=\"1624092657267\">\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1050\" />\n    </state>\n    <state x=\"100\" y=\"107\" key=\"DiffContextDialog/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1624092657267\" />\n    <state x=\"100\" y=\"125\" width=\"1480\" height=\"780\" key=\"DiffContextDialog/0.25.1680.980@0.25.1680.980\" timestamp=\"1621188691229\" />\n    <state x=\"498\" y=\"293\" width=\"699\" height=\"691\" key=\"EditFileWatcherDialog\" timestamp=\"1620966748282\">\n      <screen x=\"0\" y=\"25\" width=\"1680\" height=\"980\" />\n    </state>\n    <state x=\"498\" y=\"293\" width=\"699\" height=\"691\" key=\"EditFileWatcherDialog/0.25.1680.980@0.25.1680.980\" timestamp=\"1620966748282\" />\n    <state width=\"1878\" height=\"466\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1629170354067\">\n      <screen x=\"0\" y=\"25\" width=\"1920\" height=\"1055\" />\n    </state>\n    <state width=\"1638\" height=\"288\" key=\"GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625810485452\" />\n    <state width=\"1638\" height=\"276\" key=\"GridCell.Tab.0.bottom/0.25.1680.980@0.25.1680.980\" timestamp=\"1621891954018\" />\n    <state width=\"1878\" height=\"320\" key=\"GridCell.Tab.0.bottom/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626062194688\" />\n    <state width=\"1878\" height=\"466\" key=\"GridCell.Tab.0.bottom/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055\" timestamp=\"1629170354067\" />\n    <state width=\"1878\" height=\"466\" key=\"GridCell.Tab.0.center\" timestamp=\"1629170354065\">\n      <screen x=\"0\" y=\"25\" width=\"1920\" height=\"1055\" />\n    </state>\n    <state width=\"1638\" height=\"288\" key=\"GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625810485450\" />\n    <state width=\"1638\" height=\"276\" key=\"GridCell.Tab.0.center/0.25.1680.980@0.25.1680.980\" timestamp=\"1621891954018\" />\n    <state width=\"1878\" height=\"320\" key=\"GridCell.Tab.0.center/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626062194686\" />\n    <state width=\"1878\" height=\"466\" key=\"GridCell.Tab.0.center/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055\" timestamp=\"1629170354065\" />\n    <state width=\"1878\" height=\"466\" key=\"GridCell.Tab.0.left\" timestamp=\"1629170354064\">\n      <screen x=\"0\" y=\"25\" width=\"1920\" height=\"1055\" />\n    </state>\n    <state width=\"1638\" height=\"288\" key=\"GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625810485448\" />\n    <state width=\"1638\" height=\"276\" key=\"GridCell.Tab.0.left/0.25.1680.980@0.25.1680.980\" timestamp=\"1621891954018\" />\n    <state width=\"1878\" height=\"320\" key=\"GridCell.Tab.0.left/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626062194684\" />\n    <state width=\"1878\" height=\"466\" key=\"GridCell.Tab.0.left/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055\" timestamp=\"1629170354064\" />\n    <state width=\"1878\" height=\"466\" key=\"GridCell.Tab.0.right\" timestamp=\"1629170354066\">\n      <screen x=\"0\" y=\"25\" width=\"1920\" height=\"1055\" />\n    </state>\n    <state width=\"1638\" height=\"288\" key=\"GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625810485451\" />\n    <state width=\"1638\" height=\"276\" key=\"GridCell.Tab.0.right/0.25.1680.980@0.25.1680.980\" timestamp=\"1621891954018\" />\n    <state width=\"1878\" height=\"320\" key=\"GridCell.Tab.0.right/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626062194687\" />\n    <state width=\"1878\" height=\"466\" key=\"GridCell.Tab.0.right/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055\" timestamp=\"1629170354066\" />\n    <state width=\"1878\" height=\"604\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1626060295442\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1638\" height=\"288\" key=\"GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625810485455\" />\n    <state width=\"1638\" height=\"276\" key=\"GridCell.Tab.1.bottom/0.25.1680.980@0.25.1680.980\" timestamp=\"1621891954019\" />\n    <state width=\"1878\" height=\"604\" key=\"GridCell.Tab.1.bottom/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626060295442\" />\n    <state width=\"1878\" height=\"604\" key=\"GridCell.Tab.1.center\" timestamp=\"1626060295441\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1638\" height=\"288\" key=\"GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625810485454\" />\n    <state width=\"1638\" height=\"276\" key=\"GridCell.Tab.1.center/0.25.1680.980@0.25.1680.980\" timestamp=\"1621891954019\" />\n    <state width=\"1878\" height=\"604\" key=\"GridCell.Tab.1.center/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626060295441\" />\n    <state width=\"1878\" height=\"604\" key=\"GridCell.Tab.1.left\" timestamp=\"1626060295441\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1638\" height=\"288\" key=\"GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625810485453\" />\n    <state width=\"1638\" height=\"276\" key=\"GridCell.Tab.1.left/0.25.1680.980@0.25.1680.980\" timestamp=\"1621891954019\" />\n    <state width=\"1878\" height=\"604\" key=\"GridCell.Tab.1.left/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626060295441\" />\n    <state width=\"1878\" height=\"604\" key=\"GridCell.Tab.1.right\" timestamp=\"1626060295442\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1638\" height=\"288\" key=\"GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625810485454\" />\n    <state width=\"1638\" height=\"276\" key=\"GridCell.Tab.1.right/0.25.1680.980@0.25.1680.980\" timestamp=\"1621891954019\" />\n    <state width=\"1878\" height=\"604\" key=\"GridCell.Tab.1.right/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626060295442\" />\n    <state x=\"1061\" y=\"131\" key=\"RollbackChangesDialog\" timestamp=\"1625539606095\">\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1050\" />\n    </state>\n    <state x=\"1061\" y=\"131\" key=\"RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625539606095\" />\n    <state x=\"1061\" y=\"147\" key=\"RollbackChangesDialog/0.25.1680.980@0.25.1680.980\" timestamp=\"1621220715682\" />\n    <state x=\"399\" y=\"174\" key=\"SettingsEditor\" timestamp=\"1629168005361\">\n      <screen x=\"0\" y=\"25\" width=\"1920\" height=\"1055\" />\n    </state>\n    <state x=\"349\" y=\"148\" key=\"SettingsEditor/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625809472714\" />\n    <state x=\"349\" y=\"163\" key=\"SettingsEditor/0.25.1680.980@0.25.1680.980\" timestamp=\"1621204009041\" />\n    <state x=\"399\" y=\"174\" key=\"SettingsEditor/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055\" timestamp=\"1629168005361\" />\n    <state width=\"572\" height=\"491\" key=\"SwitcherDM\" timestamp=\"1626060913707\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"500\" height=\"477\" key=\"SwitcherDM/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625809666852\" />\n    <state width=\"500\" height=\"445\" key=\"SwitcherDM/0.25.1680.980@0.25.1680.980\" timestamp=\"1621833611954\" />\n    <state width=\"572\" height=\"491\" key=\"SwitcherDM/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626060913707\" />\n    <state x=\"503\" y=\"248\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1626062475317\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"440\" y=\"241\" key=\"Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625549565636\" />\n    <state x=\"440\" y=\"250\" key=\"Vcs.Push.Dialog.v2/0.25.1680.980@0.25.1680.980\" timestamp=\"1621874089889\" />\n    <state x=\"503\" y=\"248\" key=\"Vcs.Push.Dialog.v2/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626062475317\" />\n    <state width=\"840\" height=\"525\" key=\"XDebugger.FullValuePopup\" timestamp=\"1625548861285\">\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1050\" />\n    </state>\n    <state width=\"840\" height=\"525\" key=\"XDebugger.FullValuePopup/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625548861285\" />\n    <state width=\"840\" height=\"490\" key=\"XDebugger.FullValuePopup/0.25.1680.980@0.25.1680.980\" timestamp=\"1621872923517\" />\n    <state x=\"620\" y=\"100\" key=\"com.goide.refactor.move.GoMoveDeclarationDialog\" timestamp=\"1620708943351\">\n      <screen x=\"0\" y=\"25\" width=\"1680\" height=\"980\" />\n    </state>\n    <state x=\"620\" y=\"100\" key=\"com.goide.refactor.move.GoMoveDeclarationDialog/0.25.1680.980@0.25.1680.980\" timestamp=\"1620708943351\" />\n    <state x=\"96\" y=\"84\" width=\"1484\" height=\"866\" key=\"com.intellij.history.integration.ui.views.FileHistoryDialog\" timestamp=\"1625539801322\">\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1050\" />\n    </state>\n    <state x=\"96\" y=\"84\" width=\"1484\" height=\"866\" key=\"com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625539801322\" />\n    <state x=\"100\" y=\"100\" width=\"1480\" height=\"850\" key=\"com.intellij.history.integration.ui.views.SelectionHistoryDialog\" timestamp=\"1623640507516\">\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1050\" />\n    </state>\n    <state x=\"100\" y=\"100\" width=\"1480\" height=\"850\" key=\"com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1623640507516\" />\n    <state x=\"573\" y=\"255\" width=\"944\" height=\"571\" key=\"find.popup\" timestamp=\"1626062290695\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"501\" y=\"248\" width=\"826\" height=\"555\" key=\"find.popup/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625549404318\" />\n    <state x=\"501\" y=\"256\" width=\"826\" height=\"518\" key=\"find.popup/0.25.1680.980@0.25.1680.980\" timestamp=\"1621220657259\" />\n    <state x=\"573\" y=\"255\" width=\"944\" height=\"571\" key=\"find.popup/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626062290695\" />\n    <state x=\"590\" y=\"152\" key=\"git4idea.branch.GitSmartOperationDialog\" timestamp=\"1621827967529\">\n      <screen x=\"0\" y=\"25\" width=\"1680\" height=\"980\" />\n    </state>\n    <state x=\"590\" y=\"152\" key=\"git4idea.branch.GitSmartOperationDialog/0.25.1680.980@0.25.1680.980\" timestamp=\"1621827967529\" />\n    <state width=\"600\" height=\"472\" key=\"javadoc.popup\" timestamp=\"1624236900701\">\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1050\" />\n    </state>\n    <state width=\"600\" height=\"472\" key=\"javadoc.popup/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1624236900701\" />\n    <state width=\"600\" height=\"440\" key=\"javadoc.popup/0.25.1680.980@0.25.1680.980\" timestamp=\"1621209172851\" />\n    <state x=\"993\" y=\"110\" key=\"refactoring.ChangeSignatureDialog\" timestamp=\"1625547359189\">\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1050\" />\n    </state>\n    <state x=\"993\" y=\"110\" key=\"refactoring.ChangeSignatureDialog/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625547359189\" />\n    <state x=\"993\" y=\"128\" key=\"refactoring.ChangeSignatureDialog/0.25.1680.980@0.25.1680.980\" timestamp=\"1621814341054\" />\n    <state x=\"577\" y=\"238\" width=\"766\" height=\"746\" key=\"search.everywhere.popup\" timestamp=\"1626054398885\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"505\" y=\"231\" width=\"670\" height=\"725\" key=\"search.everywhere.popup/0.0.1680.1050@0.0.1680.1050\" timestamp=\"1625810159895\" />\n    <state x=\"505\" y=\"241\" width=\"670\" height=\"676\" key=\"search.everywhere.popup/0.25.1680.980@0.25.1680.980\" timestamp=\"1621207831397\" />\n    <state x=\"577\" y=\"238\" width=\"766\" height=\"746\" key=\"search.everywhere.popup/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1626054398885\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <default-breakpoints>\n        <breakpoint type=\"DlvErrorBreakpoint\" />\n      </default-breakpoints>\n    </breakpoint-manager>\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/hlpr$TestFromBytes_in_github_com_jhonynet_hlpr_pipeline.out\" NAME=\"TestFromBytes in github.com/jhonynet/hlpr/pipeline Coverage Results\" MODIFIED=\"1623903403152\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"GoCoverage\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -1,12 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="ALL" />
++  </component>
+   <component name="ChangeListManager">
+     <list default="true" id="ff659bab-5164-480b-a0ad-4fcbf583ef44" name="Default Changelist" comment="* remove sensitive files.">
++      <change beforePath="$PROJECT_DIR$/.idea/hlpr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hlpr.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/processors/jq/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/jq/map.go" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/processors/json/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/json/map.go" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/processors/template/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/template/map.go" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/processors/unwrap/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/processors/unwrap/map.go" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/workload/workload.go" beforeDir="false" afterPath="$PROJECT_DIR$/workload/workload.go" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -26,7 +27,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="GOROOT" path="/usr/local/Cellar/go@1.14/1.14.9/libexec" />
++  <component name="GOROOT" url="file:///usr/local/Cellar/go@1.14/1.14.9/libexec" />
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+@@ -39,19 +40,21 @@
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showExcludedFiles" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">
+     <property name="DefaultGoTemplateProperty" value="Go File" />
+     <property name="GO_FMT" value="true" />
+     <property name="NewWatcherDialog.advanced.open" value="true" />
++    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
++    <property name="go.formatter.settings.were.checked" value="true" />
+     <property name="go.import.settings.migrated" value="true" />
++    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+     <property name="go.sdk.automatically.set" value="true" />
+     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$/processors/jq" />
+@@ -85,9 +88,9 @@
+       <working_directory value="$PROJECT_DIR$/tasks/file/" />
+       <parameters value="-v task.yml" />
+       <kind value="PACKAGE" />
+-      <filePath value="$PROJECT_DIR$/src/main.go" />
+       <package value="github.com/jhonynet/hlpr" />
+       <directory value="$PROJECT_DIR$/" />
++      <filePath value="$PROJECT_DIR$/src/main.go" />
+       <method v="2" />
+     </configuration>
+     <configuration name="RUN get-java-apps" type="GoApplicationRunConfiguration" factoryName="Go Application">
+@@ -95,9 +98,9 @@
+       <working_directory value="$USER_HOME$/Desktop/hlpr/get-java-apps/" />
+       <parameters value="-v get-java-apps.yml" />
+       <kind value="PACKAGE" />
+-      <filePath value="$PROJECT_DIR$/src/main.go" />
+       <package value="github.com/jhonynet/hlpr" />
+       <directory value="$PROJECT_DIR$/" />
++      <filePath value="$PROJECT_DIR$/src/main.go" />
+       <method v="2" />
+     </configuration>
+     <configuration name="RUN test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+@@ -105,62 +108,62 @@
+       <working_directory value="$PROJECT_DIR$/tasks/test/" />
+       <parameters value="-v task.yaml" />
+       <kind value="PACKAGE" />
+-      <filePath value="$PROJECT_DIR$/src/main.go" />
+       <package value="github.com/jhonynet/hlpr" />
+       <directory value="$PROJECT_DIR$/" />
++      <filePath value="$PROJECT_DIR$/src/main.go" />
+       <method v="2" />
+     </configuration>
+     <configuration name="TestFromBytes in github.com/jhonynet/hlpr/pipeline" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+       <module name="hlpr" />
+       <working_directory value="$PROJECT_DIR$/pipeline" />
+-      <framework value="gotest" />
+       <kind value="PACKAGE" />
+       <package value="github.com/jhonynet/hlpr/pipeline" />
+       <directory value="$PROJECT_DIR$/" />
+       <filePath value="$PROJECT_DIR$/" />
++      <framework value="gotest" />
+       <pattern value="^TestFromBytes$" />
+       <method v="2" />
+     </configuration>
+     <configuration name="go test github.com/jhonynet/hlpr/pipeline" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+       <module name="hlpr" />
+       <working_directory value="$PROJECT_DIR$/pipeline" />
+-      <framework value="gotest" />
+       <kind value="PACKAGE" />
+       <package value="github.com/jhonynet/hlpr/pipeline" />
+       <directory value="$PROJECT_DIR$/" />
+       <filePath value="$PROJECT_DIR$/" />
++      <framework value="gotest" />
+       <method v="2" />
+     </configuration>
+     <configuration name="go test hlpr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+       <module name="hlpr" />
+       <working_directory value="$PROJECT_DIR$" />
+-      <framework value="gotest" />
+       <kind value="DIRECTORY" />
+       <package value="github.com/jhonynet/hlpr" />
+       <directory value="$PROJECT_DIR$" />
+       <filePath value="$PROJECT_DIR$/" />
++      <framework value="gotest" />
+       <method v="2" />
+     </configuration>
+     <configuration name="go test pipeline" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+       <module name="hlpr" />
+       <working_directory value="$PROJECT_DIR$/pipeline" />
+-      <framework value="gotest" />
+       <kind value="DIRECTORY" />
+       <package value="github.com/jhonynet/hlpr" />
+       <directory value="$PROJECT_DIR$/pipeline" />
+       <filePath value="$PROJECT_DIR$/" />
++      <framework value="gotest" />
+       <method v="2" />
+     </configuration>
+     <list>
+       <item itemvalue="Go Build.RUN file task" />
+       <item itemvalue="Go Build.RUN get-java-apps" />
++      <item itemvalue="Go Build.RUN api-to-csv" />
++      <item itemvalue="Go Build.RUN simple-task" />
+       <item itemvalue="Go Build.RUN test" />
+       <item itemvalue="Go Test.TestFromBytes in github.com/jhonynet/hlpr/pipeline" />
+       <item itemvalue="Go Test.go test github.com/jhonynet/hlpr/pipeline" />
+       <item itemvalue="Go Test.go test hlpr" />
+       <item itemvalue="Go Test.go test pipeline" />
+-      <item itemvalue="Go Build.RUN api-to-csv" />
+-      <item itemvalue="Go Build.RUN simple-task" />
+     </list>
+     <recent_temporary>
+       <list>
+@@ -172,6 +175,7 @@
+       </list>
+     </recent_temporary>
+   </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+       <changelist id="ff659bab-5164-480b-a0ad-4fcbf583ef44" name="Default Changelist" comment="" />
+@@ -450,7 +454,7 @@
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="1" />
++    <option name="version" value="3" />
+   </component>
+   <component name="UnknownFeatures">
+     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+@@ -489,167 +493,6 @@
+   </component>
+   <component name="VgoProject">
+     <integration-enabled>true</integration-enabled>
+-  </component>
+-  <component name="WindowStateProjectService">
+-    <state x="448" y="179" key="#Go_Modules_(vgo)" timestamp="1620621920902">
+-      <screen x="0" y="25" width="1680" height="980" />
+-    </state>
+-    <state x="448" y="179" key="#Go_Modules_(vgo)/0.25.1680.980@0.25.1680.980" timestamp="1620621920902" />
+-    <state x="543" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629170000829">
+-      <screen x="0" y="25" width="1920" height="1055" />
+-    </state>
+-    <state x="475" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1625810045010" />
+-    <state x="475" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.980@0.25.1680.980" timestamp="1621831305616" />
+-    <state x="543" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629170000829" />
+-    <state x="651" y="319" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626061093691">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state x="570" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1623902243368" />
+-    <state x="570" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1680.980@0.25.1680.980" timestamp="1621204238661" />
+-    <state x="651" y="319" key="#com.intellij.fileTypes.FileTypeChooser/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626061093691" />
+-    <state x="535" y="150" key="#go_build_workflow.go" timestamp="1621872659318">
+-      <screen x="0" y="25" width="1680" height="980" />
+-    </state>
+-    <state x="535" y="150" key="#go_build_workflow.go/0.25.1680.980@0.25.1680.980" timestamp="1621872659318" />
+-    <state x="603" y="121" width="587" height="753" key="#xdebugger.evaluate" timestamp="1621987027465">
+-      <screen x="0" y="0" width="1680" height="1050" />
+-    </state>
+-    <state x="603" y="121" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1621987027465" />
+-    <state x="603" y="138" width="587" height="753" key="#xdebugger.evaluate/0.25.1680.980@0.25.1680.980" timestamp="1621872818042" />
+-    <state x="0" y="25" width="1680" height="1050" key="CommitChangelistDialog2" timestamp="1629168078511">
+-      <screen x="0" y="25" width="1920" height="1055" />
+-    </state>
+-    <state x="0" y="0" width="1680" height="1050" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1625549561994" />
+-    <state x="414" y="25" width="840" height="980" key="CommitChangelistDialog2/0.25.1680.980@0.25.1680.980" timestamp="1621874088870" />
+-    <state x="0" y="0" key="CommitChangelistDialog2/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062474032" />
+-    <state x="0" y="25" key="CommitChangelistDialog2/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629168078511" />
+-    <state x="100" y="107" width="1480" height="780" key="DiffContextDialog" timestamp="1624092657267">
+-      <screen x="0" y="0" width="1680" height="1050" />
+-    </state>
+-    <state x="100" y="107" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1624092657267" />
+-    <state x="100" y="125" width="1480" height="780" key="DiffContextDialog/0.25.1680.980@0.25.1680.980" timestamp="1621188691229" />
+-    <state x="498" y="293" width="699" height="691" key="EditFileWatcherDialog" timestamp="1620966748282">
+-      <screen x="0" y="25" width="1680" height="980" />
+-    </state>
+-    <state x="498" y="293" width="699" height="691" key="EditFileWatcherDialog/0.25.1680.980@0.25.1680.980" timestamp="1620966748282" />
+-    <state width="1878" height="466" key="GridCell.Tab.0.bottom" timestamp="1629170354067">
+-      <screen x="0" y="25" width="1920" height="1055" />
+-    </state>
+-    <state width="1638" height="288" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485452" />
+-    <state width="1638" height="276" key="GridCell.Tab.0.bottom/0.25.1680.980@0.25.1680.980" timestamp="1621891954018" />
+-    <state width="1878" height="320" key="GridCell.Tab.0.bottom/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062194688" />
+-    <state width="1878" height="466" key="GridCell.Tab.0.bottom/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629170354067" />
+-    <state width="1878" height="466" key="GridCell.Tab.0.center" timestamp="1629170354065">
+-      <screen x="0" y="25" width="1920" height="1055" />
+-    </state>
+-    <state width="1638" height="288" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485450" />
+-    <state width="1638" height="276" key="GridCell.Tab.0.center/0.25.1680.980@0.25.1680.980" timestamp="1621891954018" />
+-    <state width="1878" height="320" key="GridCell.Tab.0.center/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062194686" />
+-    <state width="1878" height="466" key="GridCell.Tab.0.center/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629170354065" />
+-    <state width="1878" height="466" key="GridCell.Tab.0.left" timestamp="1629170354064">
+-      <screen x="0" y="25" width="1920" height="1055" />
+-    </state>
+-    <state width="1638" height="288" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485448" />
+-    <state width="1638" height="276" key="GridCell.Tab.0.left/0.25.1680.980@0.25.1680.980" timestamp="1621891954018" />
+-    <state width="1878" height="320" key="GridCell.Tab.0.left/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062194684" />
+-    <state width="1878" height="466" key="GridCell.Tab.0.left/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629170354064" />
+-    <state width="1878" height="466" key="GridCell.Tab.0.right" timestamp="1629170354066">
+-      <screen x="0" y="25" width="1920" height="1055" />
+-    </state>
+-    <state width="1638" height="288" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485451" />
+-    <state width="1638" height="276" key="GridCell.Tab.0.right/0.25.1680.980@0.25.1680.980" timestamp="1621891954018" />
+-    <state width="1878" height="320" key="GridCell.Tab.0.right/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062194687" />
+-    <state width="1878" height="466" key="GridCell.Tab.0.right/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629170354066" />
+-    <state width="1878" height="604" key="GridCell.Tab.1.bottom" timestamp="1626060295442">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1638" height="288" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485455" />
+-    <state width="1638" height="276" key="GridCell.Tab.1.bottom/0.25.1680.980@0.25.1680.980" timestamp="1621891954019" />
+-    <state width="1878" height="604" key="GridCell.Tab.1.bottom/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626060295442" />
+-    <state width="1878" height="604" key="GridCell.Tab.1.center" timestamp="1626060295441">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1638" height="288" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485454" />
+-    <state width="1638" height="276" key="GridCell.Tab.1.center/0.25.1680.980@0.25.1680.980" timestamp="1621891954019" />
+-    <state width="1878" height="604" key="GridCell.Tab.1.center/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626060295441" />
+-    <state width="1878" height="604" key="GridCell.Tab.1.left" timestamp="1626060295441">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1638" height="288" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485453" />
+-    <state width="1638" height="276" key="GridCell.Tab.1.left/0.25.1680.980@0.25.1680.980" timestamp="1621891954019" />
+-    <state width="1878" height="604" key="GridCell.Tab.1.left/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626060295441" />
+-    <state width="1878" height="604" key="GridCell.Tab.1.right" timestamp="1626060295442">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1638" height="288" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1625810485454" />
+-    <state width="1638" height="276" key="GridCell.Tab.1.right/0.25.1680.980@0.25.1680.980" timestamp="1621891954019" />
+-    <state width="1878" height="604" key="GridCell.Tab.1.right/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626060295442" />
+-    <state x="1061" y="131" key="RollbackChangesDialog" timestamp="1625539606095">
+-      <screen x="0" y="0" width="1680" height="1050" />
+-    </state>
+-    <state x="1061" y="131" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1625539606095" />
+-    <state x="1061" y="147" key="RollbackChangesDialog/0.25.1680.980@0.25.1680.980" timestamp="1621220715682" />
+-    <state x="399" y="174" key="SettingsEditor" timestamp="1629168005361">
+-      <screen x="0" y="25" width="1920" height="1055" />
+-    </state>
+-    <state x="349" y="148" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1625809472714" />
+-    <state x="349" y="163" key="SettingsEditor/0.25.1680.980@0.25.1680.980" timestamp="1621204009041" />
+-    <state x="399" y="174" key="SettingsEditor/102.1105.1680.1025/0.25.1920.1055@0.25.1920.1055" timestamp="1629168005361" />
+-    <state width="572" height="491" key="SwitcherDM" timestamp="1626060913707">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="500" height="477" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1625809666852" />
+-    <state width="500" height="445" key="SwitcherDM/0.25.1680.980@0.25.1680.980" timestamp="1621833611954" />
+-    <state width="572" height="491" key="SwitcherDM/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626060913707" />
+-    <state x="503" y="248" key="Vcs.Push.Dialog.v2" timestamp="1626062475317">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state x="440" y="241" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1625549565636" />
+-    <state x="440" y="250" key="Vcs.Push.Dialog.v2/0.25.1680.980@0.25.1680.980" timestamp="1621874089889" />
+-    <state x="503" y="248" key="Vcs.Push.Dialog.v2/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062475317" />
+-    <state width="840" height="525" key="XDebugger.FullValuePopup" timestamp="1625548861285">
+-      <screen x="0" y="0" width="1680" height="1050" />
+-    </state>
+-    <state width="840" height="525" key="XDebugger.FullValuePopup/0.0.1680.1050@0.0.1680.1050" timestamp="1625548861285" />
+-    <state width="840" height="490" key="XDebugger.FullValuePopup/0.25.1680.980@0.25.1680.980" timestamp="1621872923517" />
+-    <state x="620" y="100" key="com.goide.refactor.move.GoMoveDeclarationDialog" timestamp="1620708943351">
+-      <screen x="0" y="25" width="1680" height="980" />
+-    </state>
+-    <state x="620" y="100" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.25.1680.980@0.25.1680.980" timestamp="1620708943351" />
+-    <state x="96" y="84" width="1484" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1625539801322">
+-      <screen x="0" y="0" width="1680" height="1050" />
+-    </state>
+-    <state x="96" y="84" width="1484" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1625539801322" />
+-    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1623640507516">
+-      <screen x="0" y="0" width="1680" height="1050" />
+-    </state>
+-    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1623640507516" />
+-    <state x="573" y="255" width="944" height="571" key="find.popup" timestamp="1626062290695">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state x="501" y="248" width="826" height="555" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1625549404318" />
+-    <state x="501" y="256" width="826" height="518" key="find.popup/0.25.1680.980@0.25.1680.980" timestamp="1621220657259" />
+-    <state x="573" y="255" width="944" height="571" key="find.popup/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626062290695" />
+-    <state x="590" y="152" key="git4idea.branch.GitSmartOperationDialog" timestamp="1621827967529">
+-      <screen x="0" y="25" width="1680" height="980" />
+-    </state>
+-    <state x="590" y="152" key="git4idea.branch.GitSmartOperationDialog/0.25.1680.980@0.25.1680.980" timestamp="1621827967529" />
+-    <state width="600" height="472" key="javadoc.popup" timestamp="1624236900701">
+-      <screen x="0" y="0" width="1680" height="1050" />
+-    </state>
+-    <state width="600" height="472" key="javadoc.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1624236900701" />
+-    <state width="600" height="440" key="javadoc.popup/0.25.1680.980@0.25.1680.980" timestamp="1621209172851" />
+-    <state x="993" y="110" key="refactoring.ChangeSignatureDialog" timestamp="1625547359189">
+-      <screen x="0" y="0" width="1680" height="1050" />
+-    </state>
+-    <state x="993" y="110" key="refactoring.ChangeSignatureDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1625547359189" />
+-    <state x="993" y="128" key="refactoring.ChangeSignatureDialog/0.25.1680.980@0.25.1680.980" timestamp="1621814341054" />
+-    <state x="577" y="238" width="766" height="746" key="search.everywhere.popup" timestamp="1626054398885">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state x="505" y="231" width="670" height="725" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1625810159895" />
+-    <state x="505" y="241" width="670" height="676" key="search.everywhere.popup/0.25.1680.980@0.25.1680.980" timestamp="1621207831397" />
+-    <state x="577" y="238" width="766" height="746" key="search.everywhere.popup/102.1080.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1626054398885" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>

@@ -25,7 +25,7 @@ func (r *Processor) Accepts(s pipeline.Stage) bool {
 	return s.Type() == StageIdentifier
 }
 
-func (r *Processor) Identifier() string {
+func (r *Processor) Name() string {
 	return StageIdentifier
 }
 

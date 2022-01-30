@@ -3,8 +3,9 @@ package workload
 import (
 	"context"
 	"fmt"
-	"github.com/jhonynet/hlpr/utils/logger"
 	"sync"
+
+	"github.com/jhonynet/hlpr/utils/logger"
 
 	"github.com/jhonynet/hlpr/processor"
 	"github.com/jhonynet/hlpr/unit"
@@ -12,10 +13,10 @@ import (
 )
 
 type Workload struct {
-	processorProvider *processor.Provider
-	dataChannel       <-chan *unit.Data
-	errorChannels     []<-chan unit.Error
-	waitGroup         sync.WaitGroup
+	processors    processor.Collection
+	dataChannel   <-chan *unit.Data
+	errorChannels []<-chan unit.Error
+	waitGroup     sync.WaitGroup
 }
 
 func New(provider *processor.Provider) *Workload {
@@ -52,12 +53,12 @@ func (w *Workload) runSource(ctx context.Context) error {
 	if w.dataChannel, errChan, err = w.processorProvider.Source.RunSource(ctx, &w.waitGroup); err != nil {
 		return fmt.Errorf(
 			"failed to setup %s as source processor: %w",
-			w.processorProvider.Source.Identifier(), err,
+			w.processorProvider.Source.Name(), err,
 		)
 	}
 	logger.Debug(ctx, fmt.Sprintf(
 		"source processor %s running",
-		w.processorProvider.Source.Identifier(),
+		w.processorProvider.Source.Name(),
 	))
 
 	w.errorChannels = append(w.errorChannels, errChan)
@@ -74,12 +75,12 @@ func (w *Workload) runMappers(ctx context.Context) error {
 		if w.dataChannel, errChan, err = mapper.RunMap(ctx, w.dataChannel, &w.waitGroup); err != nil {
 			return fmt.Errorf(
 				"failed to setup %s as mapper processor: %w",
-				mapper.Identifier(), err,
+				mapper.Name(), err,
 			)
 		}
 		logger.Debug(ctx, fmt.Sprintf(
 			"mapper processor %s running",
-			mapper.Identifier(),
+			mapper.Name(),
 		))
 
 		w.errorChannels = append(w.errorChannels, errChan)
@@ -93,12 +94,12 @@ func (w *Workload) runSink(ctx context.Context) error {
 	if err != nil {
 		return fmt.Errorf(
 			"failed to setup %s as sink processor: %w",
-			w.processorProvider.Sink.Identifier(), err,
+			w.processorProvider.Sink.Name(), err,
 		)
 	}
 	logger.Debug(ctx, fmt.Sprintf(
 		"sink processor %s running",
-		w.processorProvider.Sink.Identifier(),
+		w.processorProvider.Sink.Name(),
 	))
 
 	w.errorChannels = append(w.errorChannels, errChan)

@@ -14,7 +14,7 @@ type Processor struct {
 	stage    pipeline.Stage
 }
 
-func (r *Processor) Identifier() string {
+func (r *Processor) Name() string {
 	return StageIdentifier
 }
 
